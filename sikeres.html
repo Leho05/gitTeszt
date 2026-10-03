@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub feltöltés teszt</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #extra {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>✅ Siker!</h1>
+
+    <p>
+        Sikeresen tudtam feltölteni egy fájlt a GitHub repositoryba!
+    </p>
+
+    <p>
+        Git + GitHub teszt működik. 🚀
+    </p>
+
+    <button onclick="siker()">
+        Teszt gomb
+    </button>
+
+    <div id="extra"></div>
+</div>
+
+<script>
+    function siker() {
+        document.getElementById("extra").innerHTML =
+            "🎉 A JavaScript is működik!";
+    }
+</script>
+
+</body>
+</html>
